@@ -1,0 +1,47 @@
+[
+  {
+    "quizQuestion": "What sound does this kanji make 雨",
+    "alternatives": ["Ame", "Asa", "Don", "Aku"],
+    "answer": "Ame",
+    "hint": "hint for question 1",
+    "image": "Image link",
+    "audio": "audio link",
+    "index": "0"
+  },
+  {
+    "quizQuestion": "What is the meaning of this word 計る",
+    "alternatives": ["To measure", "To eat", "To sleep", "Clock"],
+    "answer": "To measure",
+    "hint": "hint for question 2",
+    "image": "Image link",
+    "audio": "audio link",
+    "index": "1"
+  },
+  {
+    "quizQuestion": "How do write pain in japanese?",
+    "alternatives": ["病", "痛み", "家"],
+    "answer": "痛み",
+    "hint": "hint for question 3",
+    "image": "Image link",
+    "audio": "audio link",
+    "index": "2"
+  },
+  {
+    "quizQuestion": "Translate this from Japanese '朝日新聞",
+    "alternatives": ["Morning newspaper", "Breakfast", "Early ears"],
+    "answer": "Morning newspaper",
+    "hint": "hint for question 3",
+    "image": "Image link",
+    "audio": "audio link",
+    "index": "2"
+  },
+  {
+    "quizQuestion": "Translate this into japanse 'Feelings are heavy'",
+    "alternatives": ["思いが重い", "重いが思い","思い出"],
+    "answer": "思いが重い",
+    "hint": "hint for question 3",
+    "image": "Image link",
+    "audio": "audio link",
+    "index": "2"
+  }
+]
