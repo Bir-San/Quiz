@@ -27,8 +27,8 @@
     "index": "2"
   },
   {
-    "quizQuestion": "Translate this from Japanese '朝日新聞",
-    "alternatives": ["Morning newspaper", "Breakfast", "Early ears"],
+    "quizQuestion": "Translate this from Japanese '新聞",
+    "alternatives": ["Newspaper", "Magazine", "Early ears"],
     "answer": "Morning newspaper",
     "hint": "hint for question 3",
     "image": "Image link",
