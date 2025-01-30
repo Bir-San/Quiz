@@ -56,7 +56,7 @@ function QuestionDisplay({ currQuestion, updateScore, updateQuestion }) {
     return (
       <>
         <h1>QUIZ APP or Fuck Duolingo 🐦</h1>
-        <Button value="Click To Play" onClick={startPlay}></Button>;
+        <Button value="Click To Play" onClick={startPlay}></Button>
       </>
     );
   }
