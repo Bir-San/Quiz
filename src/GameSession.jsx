@@ -44,7 +44,7 @@ function GameSession() {
         {
             return (
                 <div className="wrapper">
-                <h1>CONGRATULATIONS!</h1>
+                <h1>{score < 3 ? "Better luck next time" : "CONGRATULATIONS!" }</h1>
                 <h2>Your score:</h2>
                 <h1 className="score">{score}</h1>
                 <Button value="Again?" onClick={reset}></Button>

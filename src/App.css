@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: center;
   min-height: 100vh;
 
@@ -22,7 +22,8 @@
   padding: 24px 32px;
   background-color: #6d3461;
   min-height: 60vh;
-  min-width: 70vh;
+  min-width: 30vw;
+  max-width: 40vw;
 }
 
 .score {
@@ -95,12 +96,18 @@ ul {
   
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   h1 {
     font-size: 2em;
+    max-width: 80vw;
   }
   h2 {
+    
     font-size: 1.2em;
+  }
+  .wrapper {
+    min-width: 80vw;
+    max-width: 80vw;
   }
 
 @media (prefers-color-scheme: light) {

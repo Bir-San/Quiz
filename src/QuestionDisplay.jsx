@@ -8,11 +8,9 @@ function QuestionDisplay({ currQuestion, updateScore, updateQuestion }) {
 
   const answerCheck = (chosenAnswer) => {
     if (chosenAnswer.innerText === currQuestion.answer) {
-      chosenAnswer.innerText += "☑️";
       chosenAnswer.style.backgroundColor = "#1F4A22";
       updateScore();
     } else {
-      chosenAnswer.innerText += "❎";
       chosenAnswer.style.backgroundColor = "#4E1716";
     }
     setTimeout(() => {
@@ -47,10 +45,7 @@ function QuestionDisplay({ currQuestion, updateScore, updateQuestion }) {
           {currQuestion.alternatives.map((alts, idx) => (
             <li key={idx}>
               <Button
-                value={alts === currQuestion.answer && disabled 
-                  ? alts + '☑️' 
-                  : alts
-                }
+                value={alts}
                 onClick={handleClick}
                 disabled={disabled}
                 style={

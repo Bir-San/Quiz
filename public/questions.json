@@ -24,7 +24,7 @@
     "audio": "audio link"
   },
   {
-    "quizQuestion": "Translate this from Japanese '新聞",
+    "quizQuestion": "Translate this from Japanese '新聞'",
     "alternatives": ["Newspaper", "Magazine", "Early ears"],
     "answer": "Newspaper",
     "hint": "hint for question 4",
