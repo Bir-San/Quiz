@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import React, { useState } from "react";
 import QuestionDisplay from "./QuestionDisplay";
+import Button from "./Button"
 
 const quizAdress = "/questions.json";
 
@@ -19,6 +20,11 @@ function GameSession() {
         setCurrentQuestion(currentQuestion + 1)
     }
 
+    const reset = () => {
+        setScore(0)
+        setCurrentQuestion(0)
+    }
+
     useEffect (() => {
         fetch(quizAdress)
         .then(response => response.json())
@@ -29,22 +35,26 @@ function GameSession() {
 
     if(loading)
         {
-            return (<h1>{loading}</h1>)
+            <div>
+                return (<h1>{loading}</h1>)
+            </div>
         } 
 
         if(currentQuestion === questions.length)
         {
             return (
-                <>
-                <h1>CONGRATULATIONS</h1>
-                <h2>Your score: {score}</h2>
-                </>
+                <div className="wrapper">
+                <h1>CONGRATULATIONS!</h1>
+                <h2>Your score:</h2>
+                <h1 className="score">{score}</h1>
+                <Button value="Again?" onClick={reset}></Button>
+                </div>
             )
         }
         return ( 
-        <>
+        <div className="wrapper">
             <QuestionDisplay currQuestion={questions[currentQuestion]} updateScore={updateScore} updateQuestion={updateQuestion}></QuestionDisplay>
-        </>
+        </div>
     )
 }
 

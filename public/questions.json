@@ -18,7 +18,7 @@
     "index": "1"
   },
   {
-    "quizQuestion": "How do write pain in japanese?",
+    "quizQuestion": "How do you write pain in japanese?",
     "alternatives": ["病", "痛み", "家"],
     "answer": "痛み",
     "hint": "hint for question 3",
@@ -36,7 +36,7 @@
     "index": "2"
   },
   {
-    "quizQuestion": "Translate this into japanse 'Feelings are heavy'",
+    "quizQuestion": "Translate this into japanese 'Feelings are heavy'",
     "alternatives": ["思いが重い", "重いが思い","思い出"],
     "answer": "思いが重い",
     "hint": "hint for question 3",

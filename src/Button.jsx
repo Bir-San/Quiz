@@ -1,8 +1,8 @@
-function Button( {alternative , onClick}) {
+function Button( {value , onClick, disabled}) {
     
 
     return ( 
-        <button onClick={onClick}>{alternative}</button>
+        <button onClick={onClick} disabled={disabled}>{value}</button>
      );
 }
 

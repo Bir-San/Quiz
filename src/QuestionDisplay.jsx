@@ -1,48 +1,65 @@
+import React, { useState, useEffect } from "react";
+import Button from "./Button.jsx";
 
-import React, { useState } from 'react';
-import Button from "./Button.jsx"
+function QuestionDisplay({ currQuestion, updateScore, updateQuestion }) {
+  const [play, setPlay] = useState(false);
+  const [delay, setDelay] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
-
-function QuestionDisplay({ currQuestion, updateScore, updateQuestion}) {
-    
-    
-    const answerCheck = (chosenAnswer) => {
-        if(chosenAnswer === currQuestion.answer) {
-            updateScore()
-        }
+  const answerCheck = (chosenAnswer) => {
+    if (chosenAnswer.innerText === currQuestion.answer) {
+      chosenAnswer.style.backgroundColor = "#1F4A22";
+      updateScore();
+    } else {
+      chosenAnswer.style.backgroundColor = "#4E1716";
     }
+    setTimeout(() => {
+      chosenAnswer.style.backgroundColor = "#1a1a1a";
+      updateQuestion();
 
-    const handleClick = (event) => {
-        answerCheck(event.target.innerText)
-        updateQuestion()
+      setDelay(false);
+      setDisabled(false);
+    }, 1200);
+  };
 
-      }
-    
-    
-    
-    
-    if(currQuestion == null)
-    return ( 
-        <h1>CONGRATULATIONS</h1>
-     );
+  const handleClick = (event) => {
+    setDisabled(true);
+    if (!delay) {
+      setDelay(true);
+      answerCheck(event.target);
+      event.target.blur();
+    }
+  };
 
-     return (
-        <>
-        <h2>
-            {currQuestion.quizQuestion}
-        </h2>
+  const startPlay = () => {
+    setPlay(true);
+  };
+
+  if (play) {
+    return (
+      <>
+        <h2>{currQuestion.quizQuestion}</h2>
         <ul>
-
-        {currQuestion.alternatives.map((alts, idx) => (
+          {currQuestion.alternatives.map((alts, idx) => (
             <li key={idx}>
-
-            <Button alternative={alts} onClick={handleClick} > </Button>
+              <Button value={alts} onClick={handleClick} disabled={disabled}>
+                {" "}
+              </Button>
             </li>
-        ))}
+          ))}
         </ul>
-        </>
-     )
+      </>
+    );
+  }
 
+  if (!play) {
+    return (
+      <>
+        <h1>QUIZ APP or Fuck Duolingo 🐦</h1>
+        <Button value="Click To Play" onClick={startPlay}></Button>;
+      </>
+    );
+  }
 }
 
-export default QuestionDisplay
+export default QuestionDisplay;
