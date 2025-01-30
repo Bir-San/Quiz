@@ -53,7 +53,7 @@ function GameSession() {
         }
         return ( 
         <div className="wrapper">
-            <QuestionDisplay currQuestion={questions[currentQuestion]} updateScore={updateScore} updateQuestion={updateQuestion}></QuestionDisplay>
+            <QuestionDisplay currQuestion={questions[currentQuestion]} updateScore={updateScore} updateQuestion={updateQuestion} />
         </div>
     )
 }

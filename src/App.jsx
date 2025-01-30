@@ -1,15 +1,9 @@
-import { useState } from 'react'
-import './App.css'
-import GameSession from './GameSession.jsx'
+import { useState } from "react";
+import "./App.css";
+import GameSession from "./GameSession.jsx";
 
 function App() {
-
-
-  return (
-    <>
-      <GameSession > </GameSession> 
-    </>
-  )
+  return <GameSession />;
 }
 
-export default App
+export default App;

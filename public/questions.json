@@ -5,8 +5,7 @@
     "answer": "Ame",
     "hint": "hint for question 1",
     "image": "Image link",
-    "audio": "audio link",
-    "index": "0"
+    "audio": "audio link"
   },
   {
     "quizQuestion": "What is the meaning of this word 計る",
@@ -14,8 +13,7 @@
     "answer": "To measure",
     "hint": "hint for question 2",
     "image": "Image link",
-    "audio": "audio link",
-    "index": "1"
+    "audio": "audio link"
   },
   {
     "quizQuestion": "How do you write pain in japanese?",
@@ -23,25 +21,22 @@
     "answer": "痛み",
     "hint": "hint for question 3",
     "image": "Image link",
-    "audio": "audio link",
-    "index": "2"
+    "audio": "audio link"
   },
   {
     "quizQuestion": "Translate this from Japanese '新聞",
     "alternatives": ["Newspaper", "Magazine", "Early ears"],
-    "answer": "Morning newspaper",
-    "hint": "hint for question 3",
+    "answer": "Newspaper",
+    "hint": "hint for question 4",
     "image": "Image link",
-    "audio": "audio link",
-    "index": "2"
+    "audio": "audio link"
   },
   {
     "quizQuestion": "Translate this into japanese 'Feelings are heavy'",
-    "alternatives": ["思いが重い", "重いが思い","思い出"],
+    "alternatives": ["思いが重い", "重いが思い", "思い出"],
     "answer": "思いが重い",
-    "hint": "hint for question 3",
+    "hint": "hint for question 5",
     "image": "Image link",
-    "audio": "audio link",
-    "index": "2"
+    "audio": "audio link"
   }
 ]

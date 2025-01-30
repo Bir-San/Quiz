@@ -8,9 +8,11 @@ function QuestionDisplay({ currQuestion, updateScore, updateQuestion }) {
 
   const answerCheck = (chosenAnswer) => {
     if (chosenAnswer.innerText === currQuestion.answer) {
+      chosenAnswer.innerText += "☑️";
       chosenAnswer.style.backgroundColor = "#1F4A22";
       updateScore();
     } else {
+      chosenAnswer.innerText += "❎";
       chosenAnswer.style.backgroundColor = "#4E1716";
     }
     setTimeout(() => {
@@ -35,6 +37,8 @@ function QuestionDisplay({ currQuestion, updateScore, updateQuestion }) {
     setPlay(true);
   };
 
+  useEffect;
+
   if (play) {
     return (
       <>
@@ -42,7 +46,19 @@ function QuestionDisplay({ currQuestion, updateScore, updateQuestion }) {
         <ul>
           {currQuestion.alternatives.map((alts, idx) => (
             <li key={idx}>
-              <Button value={alts} onClick={handleClick} disabled={disabled}>
+              <Button
+                value={alts === currQuestion.answer && disabled 
+                  ? alts + '☑️' 
+                  : alts
+                }
+                onClick={handleClick}
+                disabled={disabled}
+                style={
+                  alts === currQuestion.answer && disabled
+                    ? { backgroundColor: "#1F4A22" }
+                    : { backgroundColor: "#1a1a1a" }
+                }
+              >
                 {" "}
               </Button>
             </li>
